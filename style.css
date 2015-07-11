@@ -1,0 +1,114 @@
+body,html, h1, h2, div, img, .picBox{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	width: 100%;
+	height: 80px;
+	background-color: #424242;
+	border-bottom: 1px solid #AE9C2F;
+}
+
+#header h1{
+	top: 20%;
+	position: relative;
+	text-align: center;
+	color: #AE9C2F;
+	font-family: 'Exo', sans-serif;
+	font-size: 2.5em;
+}
+
+.picBox{
+	margin: 0 !important;
+	padding: 0;
+	width: 25%;
+	float: left;
+	display: block;
+	height: 300px;
+}
+
+.picBox img{
+	transform: all scale(2,2);
+	-webkit-transform: scale(2,2);
+	
+}
+
+.canvas{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(233,233,233,.95);
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+#prev{
+	left: 2%;
+	top: 48%;
+	float: left;
+	position: absolute;
+	cursor: pointer;
+}
+
+#next{
+	right: 2%;
+	float: right;
+	top: 48%;
+	position: absolute;
+	cursor: pointer;
+}
+
+#close{
+	top:0;
+	right:0;
+	position: absolute;
+}
+
+#prev, #next, #close{
+	opacity: .35;
+   	transition: opacity .25s ease-in-out;
+   	-moz-transition: opacity .25s ease-in-out;
+   	-webkit-transition: opacity .25s ease-in-out;
+}
+
+#prev:hover, #next:hover, #close:hover{
+	opacity: 1;
+}
+
+.caption{
+	margin: 0 12.5%;
+	width: 75%;
+	height: 50px;
+	border-radius: 5px;
+	background-color: rgba(48,49,43,.9);
+	top: 90%;
+	position: absolute;
+}
+
+.hide, .hidePic{
+	display: none;
+}
+
+#display{
+	width: 80%;
+	height: auto;
+	margin: 5% auto;
+}
+
+#display img{
+	width: 100%;
+}
+
+h3{
+	text-align: center;
+}
+
+#image-caption{
+	color: white;
+	font-family: 'Exo', sans-serif;
+}
+
+
+
+
